@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: top center;
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+}
+
+.weather-card {
+    margin: 50px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #fbe9e7;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+header h3 {
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.input-field {
+    width: 100%;
+}
+
+#search-box {
+    width: 100%;
+}
+
+main {
+    flex: 1 1 100%;
+    padding: 0 25px 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.forecast {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-details {
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.forecast img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+}
+
+.forecast .weather {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 150px;
+    width: auto;
+    flex: 1;
+}
+
+.forecast .weather .temp {
+    color: #000;
+    font-size: 5.8rem;
+    font-weight: 900;
+    width: auto;
+}
+
+.forecast .weather .degree {
+    font-size: 2.5rem;
+    font-weight: 1000;
+    height: 5.8rem;
+}
+
+.location {
+    display: flex;
+    height: 150px;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forecast .location .city {
+    color: #000;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.forecast .location .date {
+    color: #616161;
+    font-size: 1rem;
+}
+
+.forecast .temp span {
+    font-weight: 500;
+}
+
+.forecast-details .weather {
+    color: #616161;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.forecast-details .feels {
+    color: #616161;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.forecast-details .humidity {
+    color: #616161;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.forecast-details .hi-low {
+    color: #616161;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#search-box:focus {
+    color: black;
+    border-bottom: 1px solid #616161;
+    box-shadow: 0 1px 0 0 #616161;
+}
+
+#search-box:focus + label {
+    color: #fb602f;
+    font-size: 1.3rem;
+    font-weight: 500;
+    box-shadow: none;
+}

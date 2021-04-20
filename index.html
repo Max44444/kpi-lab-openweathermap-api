@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta charset="UTF-8">
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-wrap">
+        <div class="weather-card">
+            <header>
+                <h3>Weather Application</h3>
+                <div class="input-field col s6">
+                    <input id="search-box" type="text" >
+                    <label for="search-box">Search for a city...</label>
+                </div>
+            </header>
+            <main>
+                <div class="forecast">
+                    <img id="weather-img" src="img/default.png">
+                    <div class="weather">
+                        <div class="temp">15</div>
+                        <div class="degree">°C</div>
+                    </div>
+                    <div class="location">
+                        <div class="city">Kiev</div>
+                        <div class="date">Tuesday 6 April 2021</div>
+                    </div>
+                </div>
+                <div class="forecast-details">
+                    <div class="weather">Sunny</div>
+                    <div class="feels">Feels like: 14°C</div>
+                    <div class="humidity">Humidity: 30%</div>
+                    <div class="hi-low">Max/min: 13°C / 16°C</div>
+                </div>
+            </main>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
